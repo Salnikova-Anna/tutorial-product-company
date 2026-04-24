@@ -57,7 +57,13 @@ button {
 body {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0;
+  /* color: var(--primary-text-color-ligth-theme); */
 }
+
+/* body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+} */
 
 .logo {
   font-weight: 700;

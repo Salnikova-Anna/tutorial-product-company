@@ -41,7 +41,7 @@ button {
   cursor: pointer;
 }
 
-/* =============== КОМПОНЕНТИ =============== */
+/* =============== COMPONENTS =============== */
 
 /*   
 
@@ -65,7 +65,20 @@ body {
   color: #ffffff;
 } */
 
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding-bottom: 100px;
+}
+
 .logo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
@@ -105,12 +118,33 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0;
+  border: none;
   border-radius: 4px;
   color: #ffffff;
   background-color: var(--main-accent-color);
 }
 
 /* =============== HEADER =============== */
+.header {
+  padding-top: 22px;
+  padding-bottom: 44px;
+}
+
+.header-flex-container {
+  display: flex;
+}
+
+.main-nav {
+  flex-grow: 1;
+  display: flex;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
 
 .main-nav-link {
   font-weight: 400;
@@ -122,6 +156,13 @@ body {
 .main-nav-link:hover,
 .main-nav-link:focus {
   font-weight: 600;
+}
+
+.main-nav-btn-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 24px;
 }
 
 .btn-sign-in {
@@ -144,6 +185,10 @@ body {
   border: none;
   border-radius: 4px;
   background-color: var(--main-accent-color);
+}
+
+.theme-icon {
+  margin-top: 6px;
 }
 
 /* =============== HERO =============== */
@@ -172,10 +217,24 @@ body {
 /* =============== FEATURES =============== */
 
 .features-title {
+  width: 539px;
+  padding: 0 10px;
+  margin: 0 auto 50px auto;
   text-align: center;
 }
 
+.features-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list > li {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .features-item-title {
+  margin-bottom: 13px;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.5;
@@ -190,6 +249,9 @@ body {
 }
 
 .features-btn {
+  display: block;
+  padding: 15px 32px 14px 34px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
